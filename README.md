@@ -90,3 +90,13 @@ This repository is work-in-progress and will continue to get updated and improve
   year={2024}
 }
 ```
+
+This work is a follow-up work of Social-Transmotion:
+```
+@InProceedings{saadatnejad2024socialtransmotion,
+      title={Social-Transmotion: Promptable Human Trajectory Prediction}, 
+      author={Saeed Saadatnejad and Yang Gao and Kaouther Messaoud and Alexandre Alahi},
+      year={2024},
+      booktitle={International Conference on Learning Representations (ICLR)},
+}
+```
