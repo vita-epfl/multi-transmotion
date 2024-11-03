@@ -1,0 +1,30 @@
+SEED: 0
+EXPERIMENT: 'default_experiment'
+TRAIN:
+    batch_size: 128
+    epochs: 25
+    num_workers: 10
+    input_track_size: 10
+    output_track_size: 20
+    lr: 0.0001
+    lr_decay: 1
+    lr_drop: true
+    aux_weight: 0.2
+    val_frequency: 5
+    optimizer: "adam"
+    max_grad_norm: 1.0
+DATA:
+    train_datasets:
+        - NBA
+    chunk_size: 4
+MODEL:
+    token_num: 81 # Traj (1) + 2d/3d BB (2) + 3d P (39) + 2d P(39)
+    num_layers_local: 6 
+    num_layers_global: 4 
+    num_heads: 4 
+    dim_hidden: 128 
+    dim_feedforward: 512 
+    type: "transmotion"
+    eval_single: false
+    checkpoint: "final_pre_train_ckpt.pth.tar"
+    output_scale: 1 
