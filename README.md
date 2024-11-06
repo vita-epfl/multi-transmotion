@@ -4,7 +4,7 @@
 </h3>
 <h4> <i> Annual Conference on Robot Learning (CoRL), München, November 2024 </i></h4>
 
-[[Paper](https://openreview.net/pdf?id=X3OfR3axX4)] [[Website](https://www.epfl.ch/labs/vita/research/prediction/multi-transmotion/)] [[Poster](docs/Poster.pdf)] [[Slides](docs/CoRL_slides.pdf)]
+[[Paper](https://arxiv.org/abs/2411.02673)] [[Website](https://www.epfl.ch/labs/vita/research/prediction/multi-transmotion/)] [[Poster](docs/Poster.pdf)] [[Slides](docs/CoRL_slides.pdf)]
 
 
 <image src="docs/multi-transmotion.png" width="500">
