@@ -35,7 +35,8 @@ The framework is using modified trajnet++ to generate specific tabular format in
 - `[8:12]`: 2D Bounding BOx (bb_left, bb_top, bb_width, bb_height)
 - `[12:129]`: 3D pose keypoitns (x0,x2, ..x38, y0, y2, ..y38, z0, z2, ..z38)
 - `[129:207]`: 3D pose keypoitns (xx0,xx2, ..xx38, yy0, yy2, ..yy38)
-The missing data will be denoted as 'null'.
+  
+    The missing data will be denoted as 'null'.
 
 Here we will show an example to convert the NBA dataset into the Unified Human Motion Dataframework. We have conveniently added the data of NBA to the release section of the repository (for license details, please refer to the original papers).
 
@@ -71,7 +72,7 @@ Demo command for fine-tuning on NBA dataset:
 ```
 python ft_NBA/train.py --cfg ft_NBA/configs/UniHuMotion.yaml --exp_name default
 ```
-Demo command for fine-tuning on NBA dataset:
+Demo command for evaluation on NBA dataset:
 ```
 python ft_NBA/evaluate.py --ckpt ./experiments/default_experiment/checkpoints/checkpoint_default/FT_NBA_ckpt.pth.tar --metric ade_fde
 ```
