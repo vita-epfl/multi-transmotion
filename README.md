@@ -96,7 +96,7 @@ This work is a follow-up work of Social-Transmotion:
 ```
 @InProceedings{saadatnejad2024socialtransmotion,
     title={Social-Transmotion: Promptable Human Trajectory Prediction}, 
-    author={Saeed Saadatnejad and Yang Gao and Kaouther Messaoud and Alexandre Alahi},
+    author={Saadatnejad, Saeed and Gao, Yang and Messaoud, Kaouther and Alahi, Alexandre},
     booktitle={International Conference on Learning Representations (ICLR)},
     year={2024}
 }
