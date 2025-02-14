@@ -9,3 +9,5 @@ tensorboard
 scipy
 pykalman
 six
+pysparkling
+progress
