@@ -34,7 +34,7 @@ The framework is using modified trajnet++ to generate specific tabular format in
 - `[4:8]`: 3D Bounding Box (h, w, l, rot_z)
 - `[8:12]`: 2D Bounding BOx (bb_left, bb_top, bb_width, bb_height)
 - `[12:129]`: 3D pose keypoitns (x0,x2, ..x38, y0, y2, ..y38, z0, z2, ..z38)
-- `[129:207]`: 3D pose keypoitns (xx0,xx2, ..xx38, yy0, yy2, ..yy38)
+- `[129:207]`: 2D pose keypoitns (xx0,xx2, ..xx38, yy0, yy2, ..yy38)
   
     The missing data will be denoted as 'null'.
 
@@ -47,6 +47,7 @@ Here we will show an example to convert the NBA dataset into the Unified Human M
     ```
 3. Convert extracted data into UniHuMotion framework.
     ```
+    mkdir -p UniHuMotion_trajnetpp/data/UniHuMotion_NBA/ data/UniHuMotion/
     mv extract_data/NBA/output_csv/nba_train.csv UniHuMotion_trajnetpp/data/UniHuMotion_NBA/
     cd UniHuMotion_trajnetpp
     python -m trajnetdataset.convert --acceptance 1.0 1.0 1.0 1.0 --train_fraction 1.0 --val_fraction 0.0 --fps 5 --obs_len 10 --pred_len 20 --chunk_stride 1
